@@ -1,0 +1,6 @@
+CREATE TABLE GlobantPoc.Jobs (
+    JobID INT PRIMARY KEY IDENTITY(1,1),
+    JobTitle NVARCHAR(100) NOT NULL,
+    JobDescription NVARCHAR(255),
+    CreatedDate DATETIME DEFAULT GETDATE()
+);
